@@ -26,21 +26,23 @@ body{
   color: rgb(0, 0, 0);
   font-weight: bolder;
   text-align: center;
+  padding-left: 50px;
   /* animation */
-  animation-name: fade;
-  animation-duration: 2s;
+  animation-name: scale-text;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 
-@keyframes fade {
+@keyframes scale-text {
   0% {
-    opacity: 1;
+    transform: scale(1);
   }
   50% {
-    opacity: 0.5;
+    transform: scale(1.2);
   }
   100% {
-    opacity: 1;
+    transform: scale(1);
   }
 }
 /* Style for the open button */
@@ -67,7 +69,7 @@ body{
 .sidebar a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 50px;
   color: #ffffff;
   display: block;
 }
@@ -160,18 +162,21 @@ padding: 15px;
   width:100%;
   height:400px;
 }
-.imagesum1,.imagesum2{
+/* .imagesum1,.imagesum2{
+  z-index: 1;
   position: relative;
   background-color: #3d3c3c;
   list-style: none;
   height: 100px;
   width: 100%;
   border: 1px solid #ccc;
-  border-color: #000000; /* Red border color */
+  border-color: #000000; 
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .imagesum1 img{
+  position: relative;
+  z-index: 1;
   height: 100px;
   width: 100%;
   filter: blur(1.5px);
@@ -196,6 +201,7 @@ padding: 15px;
   height: 100px;
   width: 100%;
   filter: blur(1.5px);
+  z-index: 1;
 }
 .imagesum2{
   margin-top: 50px;
@@ -208,5 +214,16 @@ padding: 15px;
   color: #3d3c3c;
   font-family: 'Courier New', Courier, monospace;
   text-shadow: 0 2px 4px rgb(0, 0, 0);
+} */
+.phondiv{
+  display: flex;
+  align-items: center;
+font-size: 20px;
+}
+.phone{
+  font-weight: bolder;
+  color: #ffeaea;
+  padding-left: 50px;
+  
 }
 
