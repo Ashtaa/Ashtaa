@@ -11,10 +11,11 @@ body{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #e71158;
+  background-color: #eeeeee;
   padding: 10px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  color: rgb(0, 0, 0);
 }
 .navspan2{
   padding-left: 50px;
@@ -22,7 +23,25 @@ body{
 .navspan2 h1{
   font-family: 'Courier New', Courier, monospace;
   font-size: 50px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  text-align: center;
+  /* animation */
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /* Style for the open button */
 .open-btn {
@@ -137,8 +156,8 @@ padding: 15px;
   font-size: 50px;
 }
 .the3 img{
-  padding: 50px;
-  width:500px;
+  padding-top: 50px;
+  width:100%;
   height:400px;
 }
 .imagesum1,.imagesum2{
