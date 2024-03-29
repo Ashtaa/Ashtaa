@@ -226,4 +226,23 @@ font-size: 20px;
   padding-left: 50px;
   
 }
+.imagesum1 img{
+  width: 100%;
+}
+.imagesum2 img{
+  width: 100%;
+}
+/* service */
+.service{
+  background-color: #000000;
+  color: wheat;
+}
+.h1{
+  color: white;
+  text-align: center;
+  background-color: rgba(247, 6, 6, 0.3);
+  font-size: 50px;
+  padding: 20px;
+  border-radius: 20px;
+}
 
