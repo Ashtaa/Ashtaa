@@ -55,8 +55,8 @@ body{
 /* Style for the sidebar */
 .sidebar {
   width: 200px;
-  background-color: #615f5f;
-  height: 100%;
+  background-color: #490000;
+  height: 95%;
   position: fixed;
   left: -200px;
   top: 0;
@@ -72,6 +72,7 @@ body{
   font-size: 40px;
   color: #ffffff;
   display: block;
+
 }
 
 /* Change the color of the links on hover */
@@ -85,7 +86,7 @@ body{
   position: absolute;
   top: 0;
   right: 10px;
-  font-size: 24px;
+  font-size: 34px;
 }
 
 /* Style for the main content area */
@@ -276,4 +277,45 @@ font-size: 20px;
 .p1 h1{
   color: black;
   font-weight: bolder;
+  text-shadow: 2px 2px 4px #ff0000; 
+}
+.about .h2{
+  color: white;
+  text-align: center;
+  background-color: rgb(92, 0, 0);
+  font-size: 50px;
+  padding: 20px;
+  border-radius: 20px;
+}
+/* back to top */
+#backToTopBtn {
+   display: none; /*  Hide the button by default  */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 100px;
+  font-weight: 900;
+  border: none;
+  outline: none;
+  background-color: #770000;
+  color: rgb(2, 175, 255);
+  cursor: pointer;
+  padding: 50px;
+  border-radius: 200px;
+  transition: opacity 0.2s; 
+  
+
+}
+
+
+#backToTopBtn:hover {
+  opacity: 0.7;
+}
+footer{
+  background-color: wheat;
+}
+.icons a img{
+  width: 100px;
+  margin-left: 50px;
 }
